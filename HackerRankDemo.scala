@@ -8,10 +8,9 @@ object Solution {
     def simpleArraySum(ar: Array[Int]): Int = {
         var i:Int = 0
         var sol:Int = 0
-        while(i < ar.length)
+        for(i <- 0 to ar.length - 1)
         {
             sol+=ar(i)
-            i+=1 
         }
         sol
     }
